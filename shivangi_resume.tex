@@ -1,128 +1,25 @@
-\documentclass[11pt]{article}
-\usepackage{graphicx}
-\usepackage{geometry}
-	\textheight=2000px  
-\newcommand{\MyName}[1]{ 
-		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
-		\par \normalsize \normalfont}
-\newcommand{\MySlogan}[1]{ 
-		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
-		\par \normalsize \normalfont}
-%\usepackage{hyperref}
-\begin{document}
-\includegraphics[scale=.05]{image.JPG}
-\begin{center}
-\begin{Large}
-SHIVANGI MISHRA 
-\end{Large}
-\end{center}
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}} 
+\documentclass{scrartcl}
 
-\begin{flushleft}
-\MySlogan{APALA GIRLS HOSTEL,IET LUCKNOW(226021)}
-\MySlogan{9648052215}
-\MySlogan{mishrashivangiiet@gmail.com}
-\end{flushleft}
-\section{Career Objective:}To give my best performance as an intern in your reputable organization by using my skills and zealous nature about learning new things.
+\usepackage{xcolor}
+\usepackage{lipsum}
 
+\setkomafont{section}{\mysection}
+\newcommand{\mysection}[1]{%
+    \Large\sf\bf%
+    \setlength{\fboxsep}{0cm}%already boxed
+    \colorbox{orange!80}{%
+        \begin{minipage}{\linewidth}%
+            \vspace*{2pt}%Space before
+            #1
+            \vspace*{2pt}%Space after
+        \end{minipage}%
+    }}
 
-\section{Education:}
+    \begin{document}
 
-    \begin{tabular}{|l|c|r|} 
-      \hline
-      
-      \textbf{         } & \textbf{Year} & \textbf{Grades}\\
-       &  &  \\
-      \hline
-      Btech in ECE ,IET Lucknow  &2016-2020  &8.69(first year) \\ \hline
-       10+2 ,St.Joseph's school,Gorakhpur  &2015  &93.75 \\ \hline
-       10 ,St.Joseph's school,Gorakhpur &2013  &91\\ 
-\hline
-    \end{tabular}
-  %\end{center}
+        \section{Example section}
+        \lipsum[1]
 
-\section{Projects:}
-\begin{enumerate}
-  \item e-YRC2017-2018 Transporter Bot Theme Implementaion on FireBird V robotics Platform
-  \item Color Detection using MATLAB
-  \item Vehicle Surveillance System to read number plates on cars and store it in a database(used MATLAB for image processing)
-  \item Face Detection and Face Recogination on MATLAB 
-  \item Arduino Line Follower and Object Detector 
- \item Designed a game on Blender Game Engine
- \item Designed Home Automation using Arduino+Wifi module+Relay 
- \item Designed a basic space trek python game
-\item Fetched data from website using Raspberry Pi
-\item Read Humidity and Temperature using Raspberry Pi
- 
-\end{enumerate}
-\section{Training and Internship}
-\begin{itemize}
- \item MATLAB Summer Training from Cetpa Info Tech
- \item CORE JAVA SUMMER Training from Cetpa Info Tech
- 
-\end{itemize}
-\newpage
-\section{Technical Skills}
-\begin{itemize}
-\item Languages: Java,C,Python,html
-\item IDE :Arduino,MATLAB,Atmel Studio,Blender,XCTU,LTspice,
- \item Microcontrollers:Arduino,Atmega 8,Atmega 2560,8085,Rasberry Pi
- \end{itemize}
-\section{Soft Skills}
-\begin{enumerate}
-\item Zealous
-\item Self motivated
-\item Leadership
-\item Responsible
-\end{enumerate}
-\section{Extra Curricular Activities}
-\begin{itemize}
-\item Assistant Coordinator in College Technical Fest
-\item Played Basket Ball at school level and college level
-\item Took part in athletics at college level
-\item Played Throw Ball at college level
-\item Played footcell at college level \\
-\end{itemize}
-\section{Co-curricular Activites:}
-\begin{enumerate}
-\item Member of college{Robotics Club}
-\item Vocalist in College{western Music Team Auroras}
-\end{enumerate}
-\section{Achievements}
-\begin{itemize}
-\item Zonal Winners in AIRC at IIT KANPUR in TECHKRITI 2018
-\item Secured 2nd position in eYRC national Robotics Competition2017
-\item secured 3rd rank in city in NSO 2014-15
-\item secured 3rd rank in school in NCO 2013
-\item secured 2nd rank in city in NCO  2014
-\end{itemize}
-\section{Personal Details}
-\begin{itemize}
-\item \textbf{Father's Name:}Mr. SHASHI NATH MISHRA
-\item \textbf{Mother's Name:}Mrs. GEETA MISHRA
-\newpage
-\item \textbf{Sex:} Female
-\item\textbf{ DOB:}9th March,1998
-\item \textbf{Nationality:} Indian
-\item \textbf{Marital status:}Unmarried      \\
-\\
-\newpage
-
-\end{itemize}
-\section{Declaration:}All information mentioned in the resume are correct to the best of my knowledge.\\
-
-\section{Date:}17th April,2018.
-
-
-\section{Reference}
-\begin{flushleft}
-Dr. Subodh Wairya \\
-Professor and Head Of Department \\
-Electronics Engineering Department \\
-Institute Of Engineering and Technology (I.E.T) ,Lucknow \\
-An Autonomous Institute of Dr. A.P.J Abdul Kalam Technical University,Lucknow \\
-226021,U.P,India,+91 9044039593
-\end{flushleft}
-\section{Certificate's Link}
-https://drive.google.com/folderview?id=1XSRhgxElSNphEu7LyO1xTg5SmcdcIjQB
+        \section*{A very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long section}
+        \lipsum[1]
 \end{document}
